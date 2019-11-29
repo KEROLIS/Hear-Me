@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".Choose">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="701dp"
+        android:gravity="center"
+        android:text="Country"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/kwaitPhoto"
+            android:layout_width="114dp"
+            android:layout_height="111dp"
+            android:onClick="OnClick"
+            android:padding="30dp"
+            app:srcCompat="@drawable/kuwait" />
+
+        <TextView
+            android:id="@+id/kwaitTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="Kuwait"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageView
+            android:id="@+id/uaePhoto"
+            android:layout_width="114dp"
+            android:layout_height="111dp"
+            android:onClick="OnClick"
+            android:padding="30dp"
+
+            app:srcCompat="@drawable/uae" />
+
+        <TextView
+            android:id="@+id/uaeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="UAE"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="37dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <ImageView
+            android:id="@+id/egyPhoto"
+            android:layout_width="114dp"
+            android:layout_height="111dp"
+            android:layout_marginBottom="456dp"
+            android:onClick="OnClick"
+            android:padding="30dp"
+            app:srcCompat="@drawable/egypt" />
+
+        <TextView
+            android:id="@+id/egyTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/egy"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="74dp"
+        android:alpha=".4"
+        android:background="@android:drawable/presence_online"
+        android:text="Next"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/next"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:alpha="9"-->
+    <!--        android:background="@color/colorPrimary"-->
+    <!--        android:text="Next"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Large" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
