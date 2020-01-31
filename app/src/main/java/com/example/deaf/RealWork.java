@@ -120,7 +120,7 @@ public class RealWork extends AppCompatActivity {
                     break;}
 
                }
-                Toast.makeText(this, "جارى المعالجه", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "جارى المعالجه", Toast.LENGTH_LONG).show();
                 vid.setVideoURI(contentURI);
                 button.setVisibility(View.GONE);
                 backBtn.setVisibility(View.VISIBLE);
@@ -134,7 +134,7 @@ public class RealWork extends AppCompatActivity {
                         vid.requestFocus();
                         vid.start();
                     }
-                }, 1500);
+                }, 3000);
 
             }
 
