@@ -14,5 +14,15 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="sign1">السلام عليكم</string>
+    <string name="sign2"> اين تسكن </string>
+    <string name="sign3">شكرا</string>
+    <string name="sign4">اين تعمل</string>
+    <string name="sign5">ما اسمك</string>
+    <string name="sign6">كيف حالك</string>
 
+
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="about">عن البرنامج</string>
 </resources>

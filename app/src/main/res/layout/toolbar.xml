@@ -2,9 +2,16 @@
 <Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:background="@drawable/side_nav_bar">
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
 
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="40dp"
+
+        android:layout_height="40dp"
+        android:background="@android:drawable/stat_notify_sync_noanim"
+        android:visibility="gone"></ImageButton>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,7 +19,7 @@
         android:gravity="center"
         android:text="@string/app_name"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"></TextView>
 
 </Toolbar>
